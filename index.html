@@ -320,9 +320,133 @@
             margin-bottom: 0;
         }
 
+        /* Assessment Push Section */
+        .assessment-push {
+            background: linear-gradient(135deg, var(--navy) 0%, #0f2438 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .assessment-push-inner {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .push-statement {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--gold);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .push-sub {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
         /* Assessment Section */
         .assessment {
             background: white;
+        }
+
+        /* About Coach Section */
+        .about-coach {
+            background: white;
+        }
+
+        .coach-bio-full {
+            max-width: 800px;
+            margin: 2rem auto 0;
+        }
+
+        .coach-bio-full p {
+            color: var(--charcoal);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .coach-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        .coach-bio h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--navy);
+        }
+
+        .coach-bio p {
+            color: var(--charcoal);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .credentials-list {
+            list-style: none;
+            margin: 2rem 0;
+            padding: 0;
+        }
+
+        .credentials-list li {
+            padding: 1rem;
+            margin: 0.5rem 0;
+            background: var(--cream);
+            border-left: 4px solid var(--gold);
+            border-radius: 4px;
+            color: var(--charcoal);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* How I Can Help Section */
+        .how-i-help {
+            background: linear-gradient(135deg, var(--cream) 0%, rgba(74, 124, 140, 0.05) 100%);
+        }
+
+        .how-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .how-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 4px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(26, 58, 82, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .how-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(26, 58, 82, 0.12);
+        }
+
+        .how-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .how-card h3 {
+            color: var(--navy);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .how-card p {
+            color: var(--charcoal);
+            font-size: 0.95rem;
+            line-height: 1.6;
         }
 
         /* Testimonials Section */
@@ -884,6 +1008,23 @@
             .testimonial-quote {
                 font-size: 0.95rem;
             }
+
+            .coach-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .how-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .how-card {
+                padding: 1.5rem;
+            }
+
+            .how-icon {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
@@ -950,15 +1091,40 @@
             <h2>This Isn't About You Changing.</h2>
             <p style="color: var(--charcoal); font-size: 1.15rem;">It's about the world finally seeing what you already know.</p>
         </div>
-        <p style="text-align: center; color: var(--charcoal); max-width: 700px; margin: 2rem auto;">
-            Over 12 weeks, we use consulting-grade frameworks tested in real boardrooms, combined with intensive practice. You'll develop the communication tools, stakeholder presence, and narrative clarity that separate leaders from brilliant technical experts. By week 12, the promotion conversation, the executive room, the sponsor relationship — they all look different because <strong>you</strong> show up differently.
-        </p>
+    </section>
+
+    <!-- How I Can Help Section -->
+    <section class="how-i-help">
+        <div class="section-header">
+            <h2>How I Can Help</h2>
+            <p style="color: var(--charcoal); font-size: 1.1rem;">I am a coach who gets your world because I have lived it.</p>
+        </div>
+        <div class="coach-bio-full">
+            <p>
+                I've spent 16+ years in strategy consulting — sitting in boardrooms, navigating complex stakeholder dynamics, and watching technically brilliant professionals get overlooked because their ideas didn't land the way they deserved to. I've felt that frustration firsthand. I've also seen the transformation that happens when someone finally shows up with clarity, presence, and conviction.
+            </p>
+            <p>
+                That's why I coach. I've worked with 100+ talented professionals who were held back not by lack of capability, but by a visibility and communication gap. My approach combines:
+            </p>
+            <ul class="credentials-list">
+                <li><strong>Consulting-grade frameworks</strong> tested in real boardrooms with real stakes</li>
+                <li><strong>ICF coaching methodology</strong> — evidence-based, personalized, outcome-driven</li>
+                <li><strong>Deep understanding</strong> of tech professionals navigating complex organizational dynamics</li>
+            </ul>
+            <p>
+                I don't just teach frameworks — I help you find your voice. My coaching is built on the belief that presence isn't about becoming someone else. It's about showing up as your most authentic, capable self — and having the language and conviction to make that visible to the people who matter.
+            </p>
+        </div>
     </section>
 
     <!-- Program Section -->
     <section class="program" id="program">
         <div class="section-header">
-            <h2>The 12-Week Playbook</h2>
+            <h2>The Leader's Voice Program</h2>
+            <p style="font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--teal); font-style: italic; margin-top: 0.25rem; margin-bottom: 0;">The 12-Week Playbook</p>
+            <p style="color: var(--charcoal); font-size: 1.1rem; margin-top: 1.5rem; max-width: 750px; margin-left: auto; margin-right: auto;">
+                Over 12 weeks, we use consulting-grade frameworks tested in real boardrooms, combined with intensive practice. You'll develop the communication tools, stakeholder presence, and narrative clarity that separate leaders from brilliant technical experts. By week 12, the promotion conversation, the executive room, the sponsor relationship — they all look different because <strong>you</strong> show up differently.
+            </p>
         </div>
         <div class="phases">
             <div class="phase">
@@ -985,6 +1151,79 @@
         <p style="text-align: center; margin-top: 3rem; font-style: italic; color: var(--charcoal);">
             12 sessions × 60 minutes | 3 months | Weekly WhatsApp + email support | Personalized frameworks
         </p>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="section-header">
+            <h2>How My Coaching Has Helped Others</h2>
+            <p style="color: var(--charcoal); font-size: 1.1rem;">Real feedback from professionals I've worked with. This is what becomes possible when clarity meets confidence.</p>
+        </div>
+        
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-quote">
+                    "My session with Ritesh was more than just coaching. It felt like a safe pause in the middle of a noisy world. His gentle presence, deep empathy, and thoughtful curiosity created space for me to open up in ways I didn't expect. He doesn't rush to solve; he sits with you, sees you, and helps you see yourself with more kindness. I walked away feeling not just supported, but truly understood."
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-name">Aditi Goyal</div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-quote">
+                    "The session with Ritesh was really insightful. What really stood out was how much it felt like a genuine conversation, not just a one way exchange, but a space where we both explored challenges together. We dug into questions I had not even realised I needed answers for and that opened up a whole new level of clarity. Looking forward to more of these sessions."
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-name">Nishtha Noonwal</div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-quote">
+                    "Thank you, Ritesh. I really valued our conversation. The session stood out because of your practical approach and clear perspective. You didn't just share ideas—you helped me think through my goals in a more structured and actionable way. I'm already applying what we discussed and can see how it will improve my focus and execution."
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-name">Sudha Kavutarapu</div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-quote">
+                    "Interacting with Ritesh was a truly transformative experience. His thoughtful questions pushed me to reflect deeply on my goals and purpose, helping me bring clarity and meaning to my career journey. Ritesh doesn't just offer advice—he guides you to uncover your own answers, making the process empowering and insightful."
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-name">Uttam Kedia</div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-quote">
+                    "I had an insightful interview session with Ritesh. The discussion was extremely helpful and provided great clarity. Ritesh's approach was professional, engaging, and encouraging — he made the entire interaction comfortable and meaningful. I truly appreciate the time and effort he took."
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-name">Aman Dudeja</div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-quote">
+                    "Had an amazing conversation with Ritesh — one of the most grounded and sharp professionals I've spoken to. He listened patiently, gave honest advice, and helped me see things more clearly in just one call. Super grateful for the time and guidance."
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-name">Rahul Parihar</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Push to Assessment -->
+    <section class="assessment-push">
+        <div class="assessment-push-inner">
+            <p class="push-statement">You've seen what's possible. Now find out exactly where <em>you</em> stand.</p>
+            <p class="push-sub">Most professionals know something feels off — they just can't name it. The assessment below will tell you precisely where the gap is and what to do about it.</p>
+            <a href="#assessment" class="cta-button" style="margin-top: 1rem; display: inline-block;">Take the Free Assessment ↓</a>
+        </div>
     </section>
 
     <!-- Assessment Section -->
@@ -1133,7 +1372,7 @@
                 </div>
                 <div class="coach-credentials">
                     <span class="credential-tag">ICF Certified Coach</span>
-                    <span class="credential-tag">15+ Years in Strategy Consulting</span>
+                    <span class="credential-tag">16+ Years in Strategy Consulting</span>
                     <span class="credential-tag">Accenture Strategy</span>
                     <span class="credential-tag">PwC &nbsp;·&nbsp; Red Hat</span>
                 </div>
@@ -1141,64 +1380,9 @@
             <div class="coach-bio">
                 <h2>Ritesh Sinha</h2>
                 <p class="coach-title">Executive Coach · Leadership Strategist · ICF Professional Coach</p>
-                <p>With over 15 years of global strategy consulting experience across Accenture Strategy, PwC, and Red Hat, Ritesh brings boardroom-tested insight to the coaching room. He has spent his career at the intersection of high-stakes decision-making and human performance — helping organizations grow while quietly observing what separates professionals who rise from those who plateau.</p>
+                <p>With over 16 years of global strategy consulting experience across Accenture Strategy, PwC, and Red Hat, Ritesh brings boardroom-tested insight to the coaching room. He has spent his career at the intersection of high-stakes decision-making and human performance — helping organizations grow while quietly observing what separates professionals who rise from those who plateau.</p>
                 <p>That observation became a calling. Ritesh is a trained ICF Professional Coach, and his journey — from navigating complex corporate challenges to discovering the transformational power of coaching — has crystallized one conviction: the gap between where you are and where you're capable of leading is rarely about skill. It's about clarity, confidence, and voice.</p>
                 <p>His approach is precise yet deeply human. He blends consulting rigour with empathetic inquiry — creating a space that is honest, non-judgmental, and relentlessly focused on what's possible. Clients leave not just with insight, but with the language, presence, and conviction to act on it.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="section-header">
-            <h2>How Coaching Has Helped</h2>
-            <p style="color: var(--charcoal); font-size: 1.1rem;">Real feedback from professionals I've worked with. This is what becomes possible when clarity meets confidence.</p>
-        </div>
-        
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <div class="testimonial-quote">
-                    "My session with Ritesh was more than just coaching. It felt like a safe pause in the middle of a noisy world. His gentle presence, deep empathy, and thoughtful curiosity created space for me to open up in ways I didn't expect. He doesn't rush to solve; he sits with you, sees you, and helps you see yourself with more kindness. I walked away feeling not just supported, but truly understood."
-                </div>
-                <div class="testimonial-author">
-                    <div class="author-name">Aditi Goyal</div>
-                </div>
-            </div>
-
-            <div class="testimonial-card">
-                <div class="testimonial-quote">
-                    "Thank you, Ritesh. I really valued our conversation. The session stood out because of your practical approach and clear perspective. You didn't just share ideas—you helped me think through my goals in a more structured and actionable way. I'm already applying what we discussed and can see how it will improve my focus and execution."
-                </div>
-                <div class="testimonial-author">
-                    <div class="author-name">Sudha Kavutarapu</div>
-                </div>
-            </div>
-
-            <div class="testimonial-card">
-                <div class="testimonial-quote">
-                    "Interacting with Ritesh was a truly transformative experience. His thoughtful questions pushed me to reflect deeply on my goals and purpose, helping me bring clarity and meaning to my career journey. Ritesh doesn't just offer advice—he guides you to uncover your own answers, making the process empowering and insightful."
-                </div>
-                <div class="testimonial-author">
-                    <div class="author-name">Uttam Kedia</div>
-                </div>
-            </div>
-
-            <div class="testimonial-card">
-                <div class="testimonial-quote">
-                    "I had an insightful interview session with Ritesh. The discussion was extremely helpful and provided great clarity. Ritesh's approach was professional, engaging, and encouraging — he made the entire interaction comfortable and meaningful. I truly appreciate the time and effort he took."
-                </div>
-                <div class="testimonial-author">
-                    <div class="author-name">Aman Dudeja</div>
-                </div>
-            </div>
-
-            <div class="testimonial-card">
-                <div class="testimonial-quote">
-                    "Had an amazing conversation with Ritesh — one of the most grounded and sharp professionals I've spoken to. He listened patiently, gave honest advice, and helped me see things more clearly in just one call. Super grateful for the time and guidance."
-                </div>
-                <div class="testimonial-author">
-                    <div class="author-name">Rahul Parihar</div>
-                </div>
             </div>
         </div>
     </section>
@@ -1214,7 +1398,7 @@
     <!-- Footer -->
     <footer>
         <p><strong>The Leader's Voice</strong> | Executive Presence Coaching for Technical Leaders</p>
-        <p>Inquiries: <a href="mailto:ritesh@theleadersvoice.com" style="color: var(--gold); text-decoration: none;">ritesh@theleadersvoice.com</a></p>
+        <p>Inquiries: <a href="mailto:ritesh@riteshcoach.com" style="color: var(--gold); text-decoration: none;">ritesh@riteshcoach.com</a></p>
         <p style="margin-top: 1rem; font-size: 0.85rem;">© 2026 The Leader's Voice. All rights reserved.</p>
     </footer>
 
